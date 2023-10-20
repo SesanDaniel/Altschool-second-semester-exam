@@ -3,6 +3,7 @@ import { Route, Routes, Link, useNavigate } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import CounterPage from "./Pages/CounterPage";
 import ErrorPage from "./Pages/ErrorPage";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
       <div className="nav">
         <Link to="/" className="btn">Home</Link>
         <Link to="/counter" className="btn">Counter</Link>
-        <Link to="/error" className="btn">Error</Link>
+        {/* <Link to="/error" className="btn">Error</Link> */}
       </div>
     </>
   )
@@ -18,6 +19,7 @@ const NavBar = () => {
 
 
 const App = () => {
+
   return (
     <>
     <NavBar/>

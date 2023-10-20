@@ -1,38 +1,49 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+// import useCounter from "../Components/useCounter";
 
 //The counterPage component which is used to render all counter element on the app
 const CounterPage = () => {
-  //Declaring a useState Hook to handle state changes
-  const [count, setCount] = useState(0);
+  // const useCounter = (props) => {
+    const [value, setValue] = useState(0);
 
-  //function to handle Increment of counter
-  const handleIncrement = () => {
-    setCount(count + 1);
-  };
+    //function to handle Increment of counter
+    const handleIncrement = () => {
+      setValue(value + 1);
+    };
 
-  //function to handle counter decrement
-  const handleDecrement = () => {
-    setCount(count - 1);
-  };
+    //function to handle counter decrement
+    const handleDecrement = () => {
+      setValue(value - 1);
+    };
 
-  //function to reset counter to default === 0
-  const handleReset = () => {
-    setCount(0);
-  };
+    //function to reset counter to default === 0
+    const handleReset = () => {
+      setValue(0);
+    };
+  //   return [value, handleIncrement, handleDecrement, handleReset];
+  // };
 
-  const validateInput = () => {
-    
-  }
+  // const [count, handleIncrement, handleDecrement, handleReset, value] =
+  //   useCounter(0);
+
+  console.log(value);
+  const validateInput = () => {};
 
   //CounterPage elements to render
   return (
     <div className="container">
-      <h3 className="count">{count}</h3>
+      <h3 className="count">{value}</h3>
       <div className="counter-buttons">
-        <button className="btn" onClick={handleIncrement}>
+        <motion.button
+          animate={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          className="btn"
+          onClick={handleIncrement}
+        >
           {" "}
           Increment ↑{" "}
-        </button>
+        </motion.button>
         <button className="btn" onClick={handleReset}>
           {" "}
           Reset α{" "}
@@ -42,11 +53,11 @@ const CounterPage = () => {
           Decrement ↓{" "}
         </button>
       </div>
-      <input
-        type="text"
-        className="counter-input"
-        placeholder="You can input a random integer here"
-      />
+      <div className="inputField">
+      <input type="text" className="counter-input" value={value} onChange={(e) => {
+        setValue(+e.target.value)
+      }} />
+      </div>
     </div>
   );
 };

@@ -1,39 +1,22 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-// import useCounter from "../Components/useCounter";
+import  useCounter from "../Components/useCounter";
+import NavBar from "../Components/NavBar";
 
 //The counterPage component which is used to render all counter element on the app
 const CounterPage = () => {
-  // const useCounter = (props) => {
-    const [value, setValue] = useState(0);
+  const [count, handleIncrement, handleDecrement, handleReset, setCount, setValue] = useCounter(0);
 
-    //function to handle Increment of counter
-    const handleIncrement = () => {
-      setValue(value + 1);
-    };
-
-    //function to handle counter decrement
-    const handleDecrement = () => {
-      setValue(value - 1);
-    };
-
-    //function to reset counter to default === 0
-    const handleReset = () => {
-      setValue(0);
-    };
-  //   return [value, handleIncrement, handleDecrement, handleReset];
-  // };
-
-  // const [count, handleIncrement, handleDecrement, handleReset, value] =
-  //   useCounter(0);
-
-  console.log(value);
-  const validateInput = () => {};
+ const handleChange = (e) => {
+  setValue(+e.target.value);
+ }
 
   //CounterPage elements to render
   return (
+    <>
+    <NavBar/>
     <div className="container">
-      <h3 className="count">{value}</h3>
+      <h3 className="count">{count}</h3>
       <div className="counter-buttons">
         <motion.button
           animate={{ scale: 1 }}
@@ -41,24 +24,25 @@ const CounterPage = () => {
           className="btn"
           onClick={handleIncrement}
         >
-          {" "}
-          Increment ↑{" "}
+          Increment ↑
         </motion.button>
         <button className="btn" onClick={handleReset}>
-          {" "}
-          Reset α{" "}
+          Reset α
         </button>
         <button className="btn" onClick={handleDecrement}>
-          {" "}
-          Decrement ↓{" "}
+          Decrement ↓
         </button>
       </div>
       <div className="inputField">
-      <input type="text" className="counter-input" value={value} onChange={(e) => {
-        setValue(+e.target.value)
-      }} />
+        <input
+          type=""
+          className="counter-input"
+          value={count}
+          onChange={handleChange}
+        />
       </div>
     </div>
+    </>
   );
 };
 

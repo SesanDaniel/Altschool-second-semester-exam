@@ -18,8 +18,8 @@ body {
 
 .container {
   width: 60%;
-  height: 60vh;
-  margin: 14vh auto;
+  height: 65vh;
+  margin: 10vh auto;
   padding: 4rem 4rem;
   border-radius: 2rem;
   background-image: linear-gradient(to right, #faf0dd, #f2a2e8);
@@ -46,6 +46,17 @@ body {
   text-decoration: none;
   color: #2d2d2d;
   cursor: pointer;
+}
+
+.error-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.error-btn {
+  background-color: #c133ae;
 }
 
 .welcome-text {
@@ -80,17 +91,59 @@ body {
 
 .counter-input {
   margin-top: 5rem;
-  width: 50%;
+  width: 40%;
   outline: none;
   padding: 1rem 4rem;
   /* margin-left: 16.5rem; */
   margin: 5rem auto;
+  border-radius: 1rem;
+  border: none;
 }
 
 .inputField {
   display: flex;
-  
+
 }
+
+.error {
+  position: relative;
+  color: #2d2d2d;
+}
+
+.error-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.cone {
+  width: 20rem;
+  border-radius: 10rem;
+  mix-blend-mode: darken;
+}
+
+.head-404 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 4rem;
+  color: #2d2d2d;
+}
+
+.paragraph-404 {
+  font-size: 2.5rem;
+  font-family: "Lobster Two", sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.back-home {
+  color: #f2a2e8;
+  text-decoration: none;
+}
+
+.back-home:hover {
+  color: #2d2d2d;
+}
+
 
 @media (min-width: 300px) and (max-width: 480px) {
   .container {

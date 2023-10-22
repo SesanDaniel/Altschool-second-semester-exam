@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NavBar from "../Components/NavBar";
-import ErrorBoundaryPage from "../Components/ErrorBoundaryPage";
+import ErrorTest from "../Components/ErrorTest";
+import { ErrorBoundary } from "react-error-boundary";
 
 const HomePage = () => {
   return (
     <>
+    <ErrorBoundary fallback={<h1 className="error-band">An Error has occured ⚠️</h1>}>
     <NavBar/>
     <div className="container">
       <motion.h1
@@ -21,8 +23,9 @@ const HomePage = () => {
         studying at Altschool Africa. This is a counter app, given to me as a
         project to hone my react js skill. Please try it out
       </p>
-      <ErrorBoundaryPage/>
+      <ErrorTest/>
     </div>
+    </ErrorBoundary>
     </>
   );
 };

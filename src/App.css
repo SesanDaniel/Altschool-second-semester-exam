@@ -102,7 +102,6 @@ body {
 
 .inputField {
   display: flex;
-
 }
 
 .error {
@@ -151,7 +150,6 @@ body {
   font-family: "Lobster Two", sans-serif;
   margin-top: 10rem;
 }
-
 
 @media (min-width: 300px) and (max-width: 480px) {
   .container {

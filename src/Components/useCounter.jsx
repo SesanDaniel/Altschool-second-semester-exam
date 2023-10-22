@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const useCounter = (props) => {
-const [value, setValue] = useState(props)
+  const [value, setValue] = useState(props);
 
-//function to handle Increment of counter
-const handleIncrement = () => {
+  //function to handle Increment of counter
+  const handleIncrement = () => {
     setValue((prev) => ++prev);
   };
 
@@ -19,10 +19,17 @@ const handleIncrement = () => {
   };
 
   const setCount = (num) => {
-    setCount(num)
-  }
+    setCount(num);
+  };
 
-    return [value, handleIncrement, handleDecrement, handleReset, setCount, setValue];
+  return [
+    value,
+    handleIncrement,
+    handleDecrement,
+    handleReset,
+    setCount,
+    setValue,
+  ];
 };
 
 export default useCounter;

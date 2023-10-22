@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 const ErrorTest = (props) => {
   const [hasError, setHasError] = useState(false);
-  if (hasError)
-  throw new Error('An error occured')
+  if (hasError) throw new Error("An error occured");
 
   return (
     <div>

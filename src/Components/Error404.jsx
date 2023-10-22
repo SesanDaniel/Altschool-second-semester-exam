@@ -2,7 +2,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import cone from "../assets/images/cone.jpg";
-// Your custom 404 error component
+// custom 404 error component
 const NotFound404 = () => (
   <div className="error">
     <h1 className="head-404">404 - Page Not Found</h1>

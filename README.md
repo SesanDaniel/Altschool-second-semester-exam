@@ -49,6 +49,7 @@ Before you begin, make sure you have Node.js and npm (Node Package Manager) inst
 - Animate counter transitions with Framer Motion.
 - Use React Router DOM to navigate between different pages.
 - Implement error boundaries with React Error Boundary to handle errors gracefully.
+- Implement 404page to handle routing to an unknown route
 
 ## Technologies Used
 

@@ -16,7 +16,7 @@ const CounterPage = () => {
   ] = useCounter(0);
 
   const handleChange = (e) => {
-    setValue(+e.target.value);
+    setValue(e.target.value);
   };
 
   //CounterPage elements to render

@@ -11,6 +11,7 @@ const CounterPage = () => {
     handleIncrement,
     handleDecrement,
     handleReset,
+    setCount,
     setValue,
   ] = useCounter(0);
 

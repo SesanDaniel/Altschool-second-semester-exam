@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 import { motion } from "framer-motion";
 import  useCounter from "../Components/useCounter";
 import NavBar from "../Components/NavBar";
@@ -8,6 +9,7 @@ const CounterPage = () => {
   const [count, handleIncrement, handleDecrement, handleReset, setCount, setValue] = useCounter(0);
 
  const handleChange = (e) => {
+
   setValue(+e.target.value);
  }
 
@@ -27,7 +29,7 @@ const CounterPage = () => {
           Increment ↑
         </motion.button>
         <button className="btn" onClick={handleReset}>
-          Reset α
+          Reset ↺
         </button>
         <button className="btn" onClick={handleDecrement}>
           Decrement ↓
@@ -35,7 +37,7 @@ const CounterPage = () => {
       </div>
       <div className="inputField">
         <input
-          type=""
+          type="number"
           className="counter-input"
           value={count}
           onChange={handleChange}

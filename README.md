@@ -1,7 +1,5 @@
-Creating a detailed README for your React Counter App with libraries like Framer Motion, React Router DOM, and React Error Boundary is a great way to help others understand and use your project. Below is a template for your GitHub README:
-
 ```markdown
-# React Counter App
+# React Counter App Altschool Second Semester Exam
 
 A simple React-based counter application with additional features, powered by Framer Motion for animations, React Router DOM for navigation, and React Error Boundary for error handling.
 
@@ -14,11 +12,11 @@ A simple React-based counter application with additional features, powered by Fr
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [License](#license)
+- [Author](#Author)
 
 ## Demo
 
-You can see a live demo of the application [here](#insert-link-to-live-demo).
+You can see a live demo of the application [here](#https://daniel-altschool-counter-app.netlify.app/).
 
 ## Getting Started
 
@@ -32,7 +30,7 @@ Before you begin, make sure you have Node.js and npm (Node Package Manager) inst
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/react-counter-app.git
+   git clone https://github.com/SesanDaniel/Altschool-second-semester-exam.git
    ```
 
 2. Change to the project directory:
@@ -66,7 +64,7 @@ Before you begin, make sure you have Node.js and npm (Node Package Manager) inst
    npm start
    ```
 
-2. Open your browser and visit `http://localhost:3000` to view the application.
+2. Open your browser and visit `http://localhost:5173` to view the application.
 
 ## Roadmap
 
@@ -89,16 +87,13 @@ Contributions are welcome! If you have any improvements, bug fixes, or new featu
 4. Push your changes to your fork: `git push origin feature-name`.
 5. Create a pull request to the main repository.
 
-## License
+## Author
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is done me ```Obisesan Daniel Seyi```
 
 ---
 
-Happy coding! If you have any questions or need further assistance, please don't hesitate to [contact us](mailto:your-email@example.com).
-```
 
-Make sure to replace placeholders like `#insert-link-to-live-demo`, `your-username`, and `your-email@example.com` with your actual information. Additionally, customize the roadmap and features sections according to your project's current state and future plans.
 
 
 

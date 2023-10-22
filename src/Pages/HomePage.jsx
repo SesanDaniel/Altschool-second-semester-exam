@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import NavBar from "../Components/NavBar";
-import ErrorPage from "./ErrorPage";
+import ErrorBoundaryPage from "../Components/ErrorBoundaryPage";
 
 const HomePage = () => {
   return (
@@ -21,7 +21,7 @@ const HomePage = () => {
         studying at Altschool Africa. This is a counter app, given to me as a
         project to hone my react js skill. Please try it out
       </p>
-      <ErrorPage/>
+      <ErrorBoundaryPage/>
     </div>
     </>
   );

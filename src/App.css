@@ -144,6 +144,14 @@ body {
   color: #2d2d2d;
 }
 
+.error-band {
+  text-align: center;
+  font-size: 10rem;
+  margin: auto;
+  font-family: "Lobster Two", sans-serif;
+  margin-top: 10rem;
+}
+
 
 @media (min-width: 300px) and (max-width: 480px) {
   .container {

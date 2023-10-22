@@ -7,7 +7,7 @@ import { ErrorBoundary } from "react-error-boundary"
 const HomePage = () => {
   return (
     <>
-    <ErrorBoundary fallback={<h1>This error</h1>}>
+    <ErrorBoundary fallback={<h1 className="error-band">An Error has occured ⚠️</h1>}>
     <NavBar/>
     <div className="container">
       <motion.h1
